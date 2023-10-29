@@ -1,0 +1,198 @@
+.userinfo-container {
+    height: 600px;
+    margin: 30px 300px;
+    min-width: 1000px;
+    background-color: aquamarine;
+    display: flex;
+    border-radius: 10px;
+    border: 2px groove black;
+
+    .usercard {
+
+        .userintro-container {
+            display: flex;
+
+            .avatar {
+                margin: 20px;
+
+            }
+
+            .intro {
+                margin: 30px;
+
+                .name-user {
+                    font-weight: 700;
+                    font-size: 25px;
+                    margin: 15px auto;
+                }
+            }
+        }
+
+        .control {
+            ul {
+                list-style: none;
+
+                li {
+                    padding: 10px 5px;
+                    width: 350px;
+                    background-color: azure;
+                    margin-left: 20px;
+                    margin-bottom: 10px;
+
+                    a {
+                        text-decoration: none;
+                    }
+                }
+
+                .active {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+
+
+
+    .showinfo {
+        margin-left: 35px;
+        height: 100%;
+        width: 100%;
+        background-color: lavender;
+
+        .title-showinfo {
+            border-bottom: 2px solid black;
+            margin: 20px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+
+        .showandupdate {
+            display: flex;
+
+            .info-container {
+                flex: 2;
+
+                .info {
+                    width: fit-content;
+                    margin: 30px auto;
+
+                    .infosubtag {
+                        margin: 20px 0;
+                        font-weight: 600;
+                        display: flex;
+                        align-items: center;
+
+                        input {
+                            border-radius: 5px;
+                            border: 2px solid aquamarine;
+                            padding: 5px 10px;
+                            outline: none;
+                        }
+
+                        .info-title {
+                            min-width: 120px;
+                        }
+
+                    }
+                }
+            }
+
+            .updatepassword {
+                border-left: 1px solid black;
+                flex: 1;
+                padding: 10px;
+
+                .upassword {
+                    display: flex;
+
+                    .passwordencode {
+                        display: flex;
+                        font-size: 20px;
+                        margin-right: 50px;
+                    }
+
+                    .btn-updatepassword {
+                        button {
+                            border: 2px solid magenta;
+                            padding: 5px 20px;
+                            border-radius: 5px;
+                            margin-bottom: 30px;
+                            background-color: aquamarine;
+                        }
+
+                        button:hover {
+                            border: 2px solid antiquewhite;
+                        }
+                    }
+
+                }
+
+                .subeditpassword {
+                    margin: 0 10px;
+                    font-weight: 600;
+                }
+
+
+                .changepassword {
+                    display: none;
+
+                    .form-update-password {
+                        label {
+                            // display: block;
+                            margin: 10px 0 0;
+                        }
+
+                        input[type='text'] {
+                            border: 2px solid aquamarine;
+                            padding: 5px 10px;
+                            border-radius: 5px;
+                            outline: none;
+                        }
+
+                        input[type="submit"] {
+                            border: 2px solid magenta;
+                            padding: 5px 20px;
+                            border-radius: 5px;
+                            margin-bottom: 30px;
+                            background-color: aquamarine;
+
+                        }
+
+                        input[type="submit"]:hover {
+                            border: 2px solid antiquewhite;
+                        }
+
+                    }
+
+                }
+
+
+            }
+
+
+
+        }
+
+
+
+        .btn-update {
+            width: fit-content;
+            margin: auto;
+
+            button {
+                border: 2px solid magenta;
+                padding: 5px 20px;
+                border-radius: 5px;
+                margin-bottom: 30px;
+                background-color: aquamarine;
+            }
+
+            button:hover {
+                border: 2px solid antiquewhite;
+            }
+
+
+        }
+    }
+}

@@ -1,0 +1,166 @@
+.confirm-container {
+    display: flex;
+    margin: 20px 300px;
+    background-color: rgb(209, 233, 225);
+    min-width: 1000px;
+
+    .list-product-container {
+        flex: 1;
+        margin: 30px 50px;
+
+        .title {
+            display: flex;
+            margin: 20px 0;
+            font-weight: 500;
+            font-size: 20px;
+
+            .title-product {
+                width: 60%;
+            }
+
+            .title-quantity {
+                width: 20%;
+            }
+
+            .title-price {
+                width: 20%;
+            }
+        }
+
+        .list-product {
+            display: flex;
+            margin: 10px 0;
+
+            .product {
+                display: flex;
+                width: 60%;
+
+                .img {
+
+                    img {
+                        width: 80px;
+                    }
+                }
+
+
+                .name {
+                    margin: auto 10px;
+                }
+            }
+
+            .quantity,
+            .price {
+                width: 20%;
+                margin: auto;
+
+                .value {
+                    width: fit-content;
+                    margin: auto;
+                }
+
+            }
+
+            // .price {
+
+            //     width: 20%;
+            //     margin: auto;
+
+            // }
+        }
+
+        .total-container {
+            margin: 20px 0;
+            display: flex;
+
+            .title {}
+
+            .total-price {
+                margin: auto 10px;
+                font-size: 20px;
+                font-weight: 500;
+                color: red;
+            }
+        }
+    }
+
+    .confirm-infouser-container {
+        flex: 1;
+        margin: 30px 50px;
+
+        .edit-info {
+            width: fit-content;
+            margin: auto;
+
+            .confirm-infouser {
+                .title {
+                    font-weight: 500;
+                    font-size: 20px;
+                }
+            }
+
+            .fullnameuser,
+            .phonenumber,
+            .address {
+                margin: 10px 10px;
+
+
+                form {
+                    position: relative;
+
+                    label {
+                        font-style: italic;
+                        display: block;
+                        position: absolute;
+                        // bottom: -35px;
+                        width: fit-content;
+                        left: 2px;
+                        padding: 0px 5px;
+                    }
+
+                    input {
+                        // border: 2px solid gray;
+                        // height: 30px;
+                        // width: 300px;
+                        // padding: 5px 10px;
+                        // font-weight: bold;
+                        border-radius: 10px;
+                        border-style: none;
+                        padding-top: 30px;
+                        padding-left: 5px;
+                        padding-bottom: 5px;
+                        border: 1px solid rgb(124, 124, 124);
+                    }
+                }
+            }
+
+            .short-info {
+                display: flex;
+            }
+
+            .address {
+                input {
+                    width: 100%;
+                }
+            }
+
+        }
+
+        .btn-comfirmpay {
+            margin: auto;
+            width: fit-content;
+
+            button {
+                border-style: none;
+                background-color: red;
+                color: white;
+                width: 300px;
+                font-size: 20px;
+                font-weight: 500;
+                padding: 5px 30px;
+                border-radius: 20px;
+            }
+        }
+
+
+    }
+}

@@ -1,25 +1,48 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Main from './layout/Main';
+import Header from './layout/Header';
+import Footer from './layout/Footer';
+import { Provider } from 'react-redux';
+import store from './store/store';
+import { ToastContainer, toast } from 'react-toastify';
+import {
+  BrowserRouter,
+  Switch,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams
+} from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import 'react-toastify/dist/ReactToastify.css';
+import Main_Admin from './admin_components/layout/Main_Admin';
+
+
+class App extends React.Component {
+  render() {
+
+    return (
+      // <Provider store={store}>
+      <BrowserRouter>
+        <Switch>
+          <div className='app' >
+
+            <Route path="/">
+              <Header />
+              <Main />
+              <Footer />
+            </Route>
+
+
+            {/* <ToastContainer /> */}
+          </div>
+        </Switch>
+      </BrowserRouter>
+      // </Provider>
+    );
+
+  }
 }
 
 export default App;

@@ -1,0 +1,156 @@
+.table {
+    margin: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+
+        thead {
+            th {
+                padding: 10px;
+                text-align: center;
+                border: 1px solid #ddd;
+                background-color: wheat;
+                font-weight: bold;
+            }
+        }
+
+        tbody {
+            tr {
+                .position-container {
+                    position: fixed;
+                    z-index: 1000;
+                    background-color: rgba(0, 0, 0, .2);
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    overflow-x: hidden;
+                    overflow-y: auto;
+                    display: none;
+
+                    .position-layout-container {
+                        max-width: 800px;
+                        border-radius: 5px;
+                        margin: 80px auto;
+                        background-color: #f8f9fa;
+
+                        .position-layout {
+                            // padding: 20px;
+                            padding-bottom: 10px;
+
+                            .position-header {
+                                padding: 10px 20px;
+                                display: flex;
+                                position: relative;
+                                font-size: 25px;
+                                font-weight: 600;
+
+                                .title-header {
+                                    // margin-bottom: 15px;
+                                }
+
+                                .btn-close {
+                                    // position: absolute;
+                                    height: 100%;
+
+                                    img {
+                                        position: absolute;
+                                        top: 40%;
+                                        right: 20px;
+                                        height: 100%;
+                                        // top: 50%;
+                                        height: 10px;
+                                    }
+                                }
+                            }
+
+                            .position-content-container {
+                                .detail-order {
+
+                                    ul {
+                                        margin: 10px;
+                                    }
+
+                                    .title {
+                                        padding: 5px 20px;
+                                        background-color: #edeeef;
+                                        border-bottom: 1px solid rgb(192, 192, 192);
+                                    }
+
+                                    .orderproduct-container {
+                                        display: flex;
+                                        background-color: aliceblue;
+                                        margin: 20px;
+                                        font-weight: 500;
+                                        padding: 10px;
+
+                                        .product {
+                                            width: 55%;
+                                            display: flex;
+
+                                            .img {
+                                                img {
+                                                    width: 80px;
+                                                    margin: 5px;
+                                                }
+                                            }
+
+                                            .productname {
+                                                margin: auto 10px;
+                                            }
+                                        }
+
+                                        .price {
+                                            width: 15%;
+                                            margin: auto 10px;
+                                        }
+
+                                        .quantity-container {
+                                            width: 15%;
+                                            margin: auto 10px;
+                                        }
+
+                                        .total-price {
+                                            width: 15%;
+                                            margin: auto 10px;
+                                        }
+
+                                        .remove-btn {
+                                            width: 10%;
+                                            margin: auto;
+
+                                            img {
+                                                cursor: pointer;
+                                            }
+
+                                        }
+
+                                    }
+
+                                }
+
+                            }
+                        }
+
+
+
+                    }
+
+                }
+
+                td {
+                    background-color: #f2f2f2;
+                    padding: 10px;
+                    text-align: center;
+                    border: 1px solid #ddd;
+
+                    img:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+    }
+}

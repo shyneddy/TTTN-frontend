@@ -1,0 +1,165 @@
+.order-container {
+    margin: 20px 300px;
+    background-color: aquamarine;
+    min-width: 1000px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+
+    .title-container {
+        display: flex;
+        background-color: aqua;
+        padding: 10px;
+
+        .sub-title {
+            font-weight: 600;
+            // margin: 5px 20px;
+        }
+
+        .product {
+            width: 45%;
+        }
+
+        .price {
+            width: 15%;
+        }
+
+        .quantity {
+            width: 15%;
+        }
+
+        .total {
+            width: 15%;
+        }
+
+        .remove {
+            width: 10%;
+        }
+    }
+
+    .orderproduct-container {
+        display: flex;
+        background-color: aliceblue;
+        margin: 20px;
+        font-weight: 500;
+        padding: 10px;
+
+        .product {
+            width: 45%;
+            display: flex;
+
+            .img {
+                img {
+                    width: 80px;
+                    margin: 5px;
+                }
+            }
+
+            .productname {
+                margin: auto 10px;
+            }
+        }
+
+        .price {
+            width: 15%;
+            margin: auto 10px;
+        }
+
+        .quantity-container {
+            width: 15%;
+            margin: auto 10px;
+        }
+
+        .total-price {
+            width: 15%;
+            margin: auto 10px;
+        }
+
+        .remove-btn {
+            width: 10%;
+            margin: auto;
+
+            img {
+                cursor: pointer;
+            }
+
+        }
+
+    }
+
+    .pay-container {
+        display: flex;
+        position: relative;
+        margin: 30px 100px;
+
+        .total-order {
+            font-size: 20px;
+            font-weight: 600;
+
+            span {
+                color: red;
+                font-size: 25px;
+            }
+        }
+
+        .btn-pay {
+            position: absolute;
+            right: 10px;
+            width: fit-content;
+            // margin: 20px 0;
+
+            button {
+                border-style: none;
+                background-color: red;
+                color: white;
+                width: 300px;
+                font-size: 20px;
+                font-weight: 500;
+                padding: 5px 30px;
+                border-radius: 20px;
+            }
+        }
+    }
+
+
+}
+
+.order-noitem {
+    margin: 20px 300px;
+    background-color: aquamarine;
+    min-width: 1000px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+
+    .img {
+        width: fit-content;
+        margin: 30px auto;
+
+        img {
+            margin-top: 30px;
+            width: 200px;
+        }
+    }
+
+    .message {
+        width: fit-content;
+        margin: 30px auto;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .btn-shopping {
+        margin: 30px auto;
+        width: fit-content;
+
+        button {
+            border-style: none;
+            background-color: red;
+            color: white;
+            width: 300px;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 5px 30px;
+            border-radius: 20px;
+        }
+    }
+}

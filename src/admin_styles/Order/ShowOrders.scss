@@ -1,0 +1,316 @@
+.show-orders-admin {
+    position: relative;
+
+    h1 {
+        padding: 10px 0;
+        background-color: rgb(179, 179, 179);
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .filter-control {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+
+        select {
+            margin-left: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 5px;
+            border-radius: 6px;
+            height: 40px;
+            font-size: 15px;
+        }
+
+        input {
+            margin-left: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            height: 30px;
+            font-size: 15px;
+        }
+
+
+
+        img {
+            height: 30px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .form-search {
+            display: flex;
+            align-items: center;
+
+            input[type="text"] {
+                padding: 5px;
+                border: 1px solid rgb(0, 0, 0);
+                // border-radius: 3px;
+                border-top-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+
+                // margin-right: 5px;
+                min-width: 300px;
+                width: 30em;
+                height: 30px;
+                font-style: italic;
+            }
+
+            button[type="submit"] {
+                // padding: 5px 10px;
+                background-color: rgba($color: #000000, $alpha: 0.0);
+                color: #000000;
+                border: 1px solid rgb(0, 0, 0);
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+                padding: 0 15px;
+                cursor: pointer;
+            }
+
+            .search {
+                height: 40px;
+                width: 40px;
+                // margin-top: 10px;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+            }
+
+
+        }
+
+        .btn-add {
+            display: flex;
+            align-items: center;
+            // margin-top: 10px;
+            border-radius: 5px;
+            height: 40px;
+            font-size: 20px;
+
+            img {
+                padding-left: 8px;
+            }
+        }
+    }
+
+    table {
+        // border-radius: 10px;
+        width: 100%;
+        border-collapse: collapse;
+
+        thead {
+            th {
+                padding: 10px;
+                text-align: center;
+                border: 1px solid #ddd;
+                background-color: wheat;
+                font-weight: bold;
+            }
+        }
+
+        tbody {
+            tr {
+
+                .position-container {
+                    position: fixed;
+                    z-index: 1000;
+                    background-color: rgba(0, 0, 0, .2);
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    overflow-x: hidden;
+                    overflow-y: auto;
+                    display: none;
+
+                    .position-layout-container {
+                        max-width: 800px;
+                        border-radius: 5px;
+                        margin: 80px auto;
+                        background-color: #f8f9fa;
+
+                        .position-layout {
+                            // padding: 20px;
+                            padding-bottom: 10px;
+
+                            .position-header {
+                                padding: 10px 20px;
+                                display: flex;
+                                position: relative;
+                                font-size: 25px;
+                                font-weight: 600;
+
+                                .title-header {
+                                    // margin-bottom: 15px;
+                                }
+
+                                .btn-close {
+                                    // position: absolute;
+                                    height: 100%;
+
+                                    img {
+                                        position: absolute;
+                                        top: 40%;
+                                        right: 20px;
+                                        height: 100%;
+                                        // top: 50%;
+                                        height: 10px;
+                                    }
+                                }
+                            }
+
+                            .position-content-container {
+                                .detail-order {
+
+                                    ul {
+                                        margin: 10px;
+                                    }
+
+                                    .title {
+                                        padding: 5px 20px;
+                                        background-color: #edeeef;
+                                        border-bottom: 1px solid rgb(192, 192, 192);
+                                    }
+
+                                    .orderproduct-container {
+                                        display: flex;
+                                        background-color: aliceblue;
+                                        margin: 20px;
+                                        font-weight: 500;
+                                        padding: 10px;
+
+                                        .product {
+                                            width: 55%;
+                                            display: flex;
+
+                                            .img {
+                                                img {
+                                                    width: 80px;
+                                                    margin: 5px;
+                                                }
+                                            }
+
+                                            .productname {
+                                                margin: auto 10px;
+                                            }
+                                        }
+
+                                        .price {
+                                            width: 15%;
+                                            margin: auto 10px;
+                                        }
+
+                                        .quantity-container {
+                                            width: 15%;
+                                            margin: auto 10px;
+                                        }
+
+                                        .total-price {
+                                            width: 15%;
+                                            margin: auto 10px;
+                                        }
+
+                                        .remove-btn {
+                                            width: 10%;
+                                            margin: auto;
+
+                                            img {
+                                                cursor: pointer;
+                                            }
+
+                                        }
+
+                                    }
+
+                                }
+
+                            }
+                        }
+
+
+
+                    }
+
+                }
+
+                td {
+                    background-color: #f2f2f2;
+                    padding: 5px;
+                    text-align: center;
+                    border: 1px solid #ddd;
+                    vertical-align: middle;
+
+                    .icon-view {
+                        display: block;
+                        margin: auto;
+                    }
+
+                    .icon-view:hover {
+                        opacity: 0.7;
+                    }
+
+                    td:nth-child(2) {
+                        width: 200px;
+                        /* Chiều rộng là 200px cho cột thứ hai */
+                    }
+
+                    .avatar {
+                        height: 100px;
+                        width: 80px;
+                        border-radius: 5px;
+                        display: flex;
+                        justify-content: center;
+                        // padding-left: 70px;
+                        margin: auto;
+                    }
+
+                    .button-group {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        select {
+                            background-color: rgb(0, 217, 255);
+                            border-radius: 5px;
+                            padding: 4px;
+
+                            display: flex;
+                            margin-right: 2px;
+                            justify-content: center;
+                            margin-right: 2px;
+
+                            // option:first-child {
+                            //     background-color: transparent;
+                            //     color: transparent;
+                            //     border: none;
+                            // }
+                        }
+
+                        button {
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        .btn-comfirm {
+                            background-color: rgb(0, 195, 255);
+                            border: 1px solid black;
+                            padding: 5px;
+                            border-radius: 5px;
+                            display: flex;
+
+                            img {
+                                margin-right: 2px;
+                                height: 20px;
+                                width: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
